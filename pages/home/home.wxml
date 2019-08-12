@@ -1,0 +1,37 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <view class='swiper_container'>
+    <swiper class='swiper_box' indicator-dots='true' indicator-color='red' indicator-active-color='yellow' autoplay="{{autoplay}}">
+      <block wx:for="{{banners}}" wx:key="{{item.businessId}}">
+        <swiper-item item-id="{{item.businessId}}">
+          <image data-id="{{item.id}}" src="{{item.picUrl}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="zan-panel">
+    <view class="zan-cell">
+      <view class="zan-cell__bd">关于我们</view>
+      <view class="zan-cell__ft">
+        <view class="img-box" bindtap="showmap">详细地址
+          <image src="../../images/ico-addr-red.png" class="img" />
+        </view>
+      </view>
+    </view>
+    <view class="zan-font-10">十年磨一剑，一直以来我们致力于做最贴心、最专业的健身房，您的满意是我们的福祉。。</view>
+    <view class="zan-font-10">地狱健身馆携手健康与健美欢迎您的到来。</view>
+  </view>
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd">我们的环境</view>
+      <view class="zan-cell__ft">
+        <view class="img-box" bindtap="showvideo">实景视频展示
+          <image src="../../images/video.png" class="imgvideo" />
+        </view>
+      </view>
+    </view>
+    <!-- <view class="envimg" wx:for="{{envpic}}">
+      <image src="{{item.picUrl}}"></image>
+    </view> -->
+  </view>
+</view>
