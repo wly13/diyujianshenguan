@@ -162,12 +162,12 @@ Page({
   },
   shwoVideo:function(){
     wx.navigateTo({
-      url: 'pages/video/video',
+      url: '/pages/video/video',
     })
   },
   showCoach:function(){
     wx.navigateTo({
-      url: 'pages/coach/coach',
+      url: '/pages/coach/coach'
     })
   }
 })
