@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/reserve/reserve",
     "pages/course/course",
-    "pages/address/address"
+    "pages/address/address",
+    "pages/coach/coach"
   ],
   "window": {
     "backgroundTextStyle": "light",

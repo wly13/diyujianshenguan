@@ -1,0 +1,14 @@
+<!--pages/coach/coach.wxml-->
+<view class="coach-container">
+  <block class="coach-item" wx:for="{{coachs}}" wx:key="{{item.id}}">
+    <view class="coach-img">
+      <image src="{{item.pic}}"></image>
+    </view>
+    <view class="coach-desc">
+      <view class="coach-name">{{item.name}}</view>
+      <view class="coach-recommendStatusStr">{{item.recommendStatusStr}}</view>
+      <view class="coach-tags">标签：{{item.tags}}</view>
+      <view class="coach-characteristic">特长：{{item.characteristic}}</view>
+    </view>
+  </block>
+</view>

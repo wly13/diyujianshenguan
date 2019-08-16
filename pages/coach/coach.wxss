@@ -1,0 +1,19 @@
+/* pages/coach/coach.wxss */
+/* .coach-container{
+  padding: 5rpx;
+  box-sizing: border-box;
+} */
+.coach-item{
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.10);
+  
+}
+.coach-img{
+  box-sizing: border-box;
+}
+.coach-name{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: brown;
+  margin-top: 3%;
+}

@@ -25,7 +25,7 @@ Page({
     wx.request({
         url: 'https://api.it120.cc/' + app.globalData.subDomain + '/banner/list',
         success: function(res) {
-          // console.log(res.data.data);
+          console.log(res.data.data);
           var banners = [];
           var enviros = [];
           var coachs = [];
