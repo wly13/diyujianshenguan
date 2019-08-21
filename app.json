@@ -6,7 +6,8 @@
     "pages/reserve/reserve",
     "pages/course/course",
     "pages/address/address",
-    "pages/coach/coach"
+    "pages/coach/coach",
+    "pages/article/article"
   ],
   "window": {
     "backgroundTextStyle": "light",

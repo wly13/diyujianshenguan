@@ -1,0 +1,26 @@
+<!--pages/article/article.wxml-->
+<!-- <text>pages/article/article.wxml</text> -->
+<view>
+  <view class="zan-panel articles">
+    <block wx:for="{{ articles }}" wx:key="{{item.categoryId}}">
+      <navigator url="/pages/articles-detail/index?id={{item.id}}">
+        <view class="article__item">
+          <view class="article__thumb">
+            <image class="article__image" src="{{ item.pic }}"></image>
+          </view>
+          <view class="article__info">
+            <view class="article__title article__title__large" background-image="url({{item.pic}})">{{ item.title }}</view>
+            <view class="article__desc">
+              <text wx:if="{{ item.tags }}" class="article__source">{{ item.tags }}</text>
+              <text class="article__time">{{ item.dateAdd }}</text>
+              <view class="article__count">
+                <image class="article__icon" src="../../images/eye.png"></image>
+                <text>{{ item.views }}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

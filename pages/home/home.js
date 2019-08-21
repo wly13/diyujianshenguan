@@ -48,6 +48,7 @@ Page({
           // console.log(that.data.coachs);
         }
       }),
+      //获取文章
       wx.request({
         url: 'https://api.it120.cc/' + app.globalData.subDomain + '/cms/news/list',
         success: function(res) {
@@ -168,6 +169,11 @@ Page({
   showCoach:function(){
     wx.navigateTo({
       url: '/pages/coach/coach'
+    })
+  },
+  showArticle:function(){
+    wx.navigateTo({
+      url: '/pages/article/article',
     })
   }
 })
